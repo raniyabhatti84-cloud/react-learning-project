@@ -1,58 +1,67 @@
-import React from "react";
+
+
+import img9 from "../assets/image-9@2x.png";
+import logoCopy from "../assets/logo-copy.png";
+import logo1 from "../assets/logo-1.png";
+import logo2 from "../assets/logo@2x.png";
+import logo3 from "../assets/logo2x.png";
+import logo4 from "../assets/logo-2.png";
+import logo5 from "../assets/logo-3.png";
+import rightArrow from "../assets/right@3x.png";
+
 
 function Section5() {
-    return (
-        <div id="pricing" className="mt-10 lg:mt-50">
-            <div className="flex flex-col lg:flex-row lg:mt-7 items-center justify-center bg-gray-200 py-12 px-6">
+  return (
+    <section id="pricing" className="mt-16">
+      <div className="flex flex-col lg:flex-row items-center justify-center bg-gray-100 py-12 px-6 gap-10">
 
-                {/* LEFT IMAGE */}
-                <div className="flex justify-center lg:w-1/2 mb-8 lg:mb-0">
-                    <img
-                        className="h-auto w-full max-w-sm lg:max-w-md"
-                        src="src/assets/image 9@2x.png"
-                        alt=""
-                    />
-                </div>
-
-                {/* RIGHT CONTENT */}
-                <div className="lg:w-1/2 lg:ml-10">
-                    <p className="text-[#717171] font-medium lg:text-3xl lg:mt-50 text-base leading-relaxed">
-                        Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
-                        lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
-                        enim metus. Vivamus sed libero ornare, tristique quam in, gravida
-                        enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit
-                        at ligula molestie, nec molestie mi blandit. Suspendisse cursus
-                        tellus sed augue ultrices, quis tristique nulla sodales.
-                    </p>
-
-                    <h2 className="text-[#4CAF4F] font-semibold lg:text-4xl text-2xl mt-4">
-                        Tim Smith
-                    </h2>
-
-                    <h3 className="text-[#89939E] font-normal lg:text-3xl lg:mt-7 text-lg mt-1">
-                        British Dragon Boat Racing Association
-                    </h3>
-
-                    {/* LOGOS ROW */}
-                    <div className="flex flex-wrap items-center lg:mt-7 gap-4 mt-6">
-
-                        <img className="h-6 lg:w-15 lg:h-15" src="src/assets/Logo@2x copy.png" alt="" />
-                        <img className="h-7 lg:w-15 lg:h-15" src="src/assets/Logo (1).png" alt="" />
-                        <img className="h-8 lg:w-15 lg:h-15" src="src/assets/Logo@2x.png" alt="" />
-                        <img className="h-8 lg:w-15 lg:h-15" src="src/assets/Logo2x.png" alt="" />
-                        <img className="h-8 lg:w-15 lg:h-15" src="src/assets/Logo (2).png" alt="" />
-                        <img className="h-8 lg:w-15 lg:h-15" src="src/assets/Logo (3).png" alt="" />
-
-                        <button className="flex items-center lg:text-3xl text-[#4CAF4F] font-semibold ml-2">
-                            Meet all customers
-                            <img className="w-5 h-3 ml-2 lg:h-9 lg:w-9" src="src/assets/Right@3x.png" alt="" />
-                        </button>
-
-                    </div>
-                </div>
-            </div>
+        {/* LEFT IMAGE */}
+        <div className="w-full lg:w-1/2 flex justify-center">
+          <img
+            className="w-full max-w-xs sm:max-w-sm lg:max-w-md"
+            src={img9}
+            alt=""
+          />
         </div>
-    );
+
+        {/* RIGHT CONTENT */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <p className="text-[#717171] text-sm sm:text-base lg:text-xl leading-relaxed">
+            Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+            lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
+            enim metus. Vivamus sed libero ornare, tristique quam in, gravida
+            enim.
+          </p>
+
+          <h2 className="text-[#4CAF4F] font-semibold text-xl lg:text-3xl mt-4">
+            Tim Smith
+          </h2>
+
+          <h3 className="text-[#89939E] text-sm lg:text-lg mt-1">
+            British Dragon Boat Racing Association
+          </h3>
+
+          {/* LOGOS */}
+          <div className="flex flex-wrap justify-center lg:justify-start items-center gap-4 mt-6">
+            <img className="h-6 lg:h-10" src={logoCopy} />
+            <img className="h-6 lg:h-10" src={logo1} />
+            <img className="h-6 lg:h-10" src={logo2} />
+            <img className="h-6 lg:h-10" src={logo3} />
+            <img className="h-6 lg:h-10" src={logo4} />
+            <img className="h-6 lg:h-10" src={logo5} />
+
+            <button className="flex items-center text-[#4CAF4F] font-semibold text-sm lg:text-lg ml-2">
+              Meet all customers
+              <img className="ml-2 h-4 lg:h-6" src={rightArrow} />
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Section5;
+
+
