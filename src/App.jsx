@@ -6,7 +6,7 @@ import Section4 from "./Components/Unlock.jsx";
 import Section5 from "./Components/Costumers.jsx";
 import Section6 from "./Components/Community.jsx";
 import Footer from "./Components/Footer.jsx";
-import image from "./assets/pana@2x.png";
+import image from "./assets/pana12x.png";
 
 function App() {
   return (
