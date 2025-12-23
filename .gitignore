@@ -7,7 +7,19 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+# Dependency directories
+node_modules/
+
+# Production build
+dist/
+dist-ssr/
+
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Editor directories and files
 .vscode/*
@@ -19,3 +31,19 @@ node_modules
 *.njsproj
 *.sln
 *.sw?
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Vite cache
+.vite/
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
